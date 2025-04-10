@@ -16,7 +16,7 @@ timezone: America/Chicago
 
 title: Tai Harrell # the main title
 
-tagline: Aspiring Devops Engineer # it will display as the subtitle
+tagline: terraform apply --auto-approve 😏   # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Tai Harrell Cloud Engineer/Devops Engineer
@@ -41,8 +41,7 @@ social:
     - https://twitter.com/username # change to your Twitter homepage
     - https://github.com/trell991 # change to your GitHub homepage
     # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://linkedin.com/in/tai-harrell-594478186/
 
 # Site Verification Settings
 webmaster_verifications:
@@ -98,7 +97,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: "./assets/lib/tai-avatar.jpg"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

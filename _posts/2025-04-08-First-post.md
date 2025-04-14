@@ -6,7 +6,9 @@ tags: [Pet-Projects, IIT]
 layout: post
 ---
 
-Hello, and welcome to the lab! Here, I’ll be documenting all of my personal projects, ideas, and aspirations—not only to serve as a portfolio of my work as an engineer, but also to leave a paper trail of my journey in the tech industry.
+## Hello, and welcome to the lab
+
+ Here, I’ll be documenting all of my personal projects, ideas, and aspirations—not only to serve as a portfolio of my work as an engineer, but also to leave a paper trail of my journey in the tech industry.
 
 Currently, I’m in an IT Operations role and looking to transition into a specialized DevOps role. While in school at the Illinois Institute of Technology, my professor—Professor Jeremy (my favorite professor)—introduced me to the DevOps discipline and its practices. An enterprise server tower was donated to the school, and Professor Jeremy turned it into our department’s internal cloud platform by running Proxmox on it.
 

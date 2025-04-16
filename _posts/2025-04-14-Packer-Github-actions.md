@@ -8,19 +8,15 @@ layout: post
 
 ## Packer + Github Actions
 
-When using virtual machines for hosting applications Packer can be an effective tool for creating and provisioning the VM.
-Normally I will build packer images via the commandline, upload them to Azure then deploy instances of that image with terraform.
+When using virtual machines for hosting applications Packer can be an effective tool for creating and provisioning the VM. Normally I will build packer images via the commandline, upload them to Azure then deploy instances of that image with terraform.
 
-Then I thought to myself why not automate this process with a pipeline tool? So off I went digging into the Packer and Github Actions pipeline built out to smoothen out my development proccess.
+Then I thought to myself why not automate this process with a pipeline tool? So off I went digging into the Packer and Github Actions docs to get this built out
 
-After may attempts and failures (69 builds) I was able to get the pipeline working with Packer. This pipeline is apart of a larger project im working on called **Chaos Labs** but I wanted to share this pipeline flow because I ran into a couple of nuanced issue while building it
+After may attempts and failures (69 builds) I was able to get the pipeline working with Packer. This pipeline is apart of a larger project im working on called **Chaos Labs** but I wanted to share this pipeline flow because I ran into a couple of nuanced issue while building it.
 
 ## Packer Directory structure
 
 First, let's dive into the Packer directory structure within your project. I like to organize my Packer configurations inside the `build` directory. Within `build`, I create a `packer` subdirectory, as shown in the diagram below.
-
-> I'm using mermaid to make these snazzy diagrams
-{: .prompt-tip }
 
 <div class="mermaid">
 graph TD
@@ -157,7 +153,6 @@ build {
     }
   }
 }
-
 ```
 
 I'm structuring my Packer project this way because I was running into a lot of issues with Packer not being able to find my variable declarations when running the workflow in GitHub Actions. As you can see in the Packer script, I'm declaring all the variables required to build the image and setting the `subscription_id` variable to `null`, since that value will be passed in from GitHub Actions at runtime.

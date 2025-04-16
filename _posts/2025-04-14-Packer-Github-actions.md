@@ -28,7 +28,6 @@ graph TD
     A --> B[golden-grafana]
     B --> C[golden-grafana-vars.auto.pkrvars.hcl]
     B --> D[ubuntu-server-jammy.pkr.hcl]
-
 </div>
 
 Within the `packer` subdirectory, I then create a directory for the image I'm building. In this example, I've named the image `golden-grafana`. Inside the `golden-grafana` directory are my Packer files: `golden-grafana-vars.auto.pkrvars.hcl` and `ubuntu-server-jammy.pkr.hcl`.

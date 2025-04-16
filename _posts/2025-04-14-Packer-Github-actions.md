@@ -1,6 +1,6 @@
 ---
 title: "Building Packer images and uploading to Azure via Github Actions"
-date: 2025-04-14 8:35:00 +0000
+date: 2025-04-15 8:35:00 +0000
 categories: [Personal Projects]
 tags: [Packer,Terraform,Github Actions]
 layout: post
